@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}React Demo{% end %}
+
+{% block custom_head_tags %}
+    <script type="text/javascript" src="{{ static_url("js/react/react.js") }}"></script>
+    <script type="text/javascript" src="{{ static_url("js/react/react-dom.js") }}"></script>
+    <script type="text/javascript" src="{{ static_url("js/app-js/lib/react_demo.js") }}"></script>
+{% end %}
+
+{% block content %}
+
+<div id="content"></div>
+
+{% end %}
