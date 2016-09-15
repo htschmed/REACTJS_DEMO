@@ -48,7 +48,7 @@ In order to run the demo your enviroment requires the following packages:
 * [Python](https://www.python.org/) version 2.7.9 or greater.
   * [Tornado Web Framework](http://www.tornadoweb.org/en/stable/) version 4.4.1 or greater
 
-If you do not have the above packages installed, visit the provided links to learn more about how to download and install the prerequisites
+If you do not have the above packages installed, visit the above links to learn more about how to download and install the prerequisites
 
 In order to modify and *experiment* with the source you will need to have a JavaScript transcompiler either compile the script code on the client side using something like [Babel 5](https://babeljs.io/) in-browser ES2015 and JSX transformer.  This can be found at [CDNJS](https://cdnjs.com/libraries/babel-core/5.8.34), use this script tag to trigger the transformer.
 ```html 
@@ -62,3 +62,15 @@ You may also precompile ReactJS files using the [Babel](https://babeljs.io/) com
 You should also include the ES2015 and React presets by running:
 
 `npm install babel-preset-es2015 babel-preset-react`
+
+Once installed [Babel](https://babeljs.io/) can be set up to monitor and compile a directory by running:
+
+`babel --presets es2015,react --watch src/ --out-dir lib/`
+
+Launching The Application
+=========================
+To run the application, from your shell enviroment navigate to the project directory and type:
+
+`python main.py`
+
+This will spin up the development web server and you can view the application by opening up your favorite web browser and navigating to [http://localhost:7777](http://localhost:7777) to view the sample application in action.
